@@ -1,0 +1,108 @@
+page{
+    padding-bottom: 90rpx;
+}
+.detail_swiper{
+
+    swiper{
+        height: 65vw;
+        text-align: center;
+       image{
+           width: 60%;
+       }
+    }
+}
+.goods_price{
+    padding: 20rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: var(--themeColor);
+}
+.goods_name_row{
+    display: flex;
+    border-top: 5px solid #dedede;//上边框线
+    border-bottom: 5rpx solid #dedede;//下边框线
+    padding: 10rpx 0;
+    .goods_name{
+        flex: 5;
+        color: black;
+        font-size: 30rpx;
+        padding: 0 10rpx;
+
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;//第几行出现点
+    }
+    .goods_collect{
+        flex: 1;
+        display: flex;
+        //主轴方向    变为上下
+        flex-direction: column;
+        justify-content: center;//垂直居中
+        align-items: center;//水平居中
+        border-left: 1px solid #000;//左边边框线
+        .iconfont{}
+        .icon-shoucang{
+            color: orangered;
+        }
+        .collect_text{}
+    }
+}
+.goods_info{
+    .goods_info_title{
+        font-size: 32rpx;
+        color: var(--themeColor);
+        font-weight: 20rpx;
+        padding: 20rpx;
+    }
+    .goods_info_content{}
+}
+.btm_tool{
+    border-top: 1px solid #ccc;
+    position: fixed;//固定定位
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx;
+    background: #fff;
+    display: flex;
+    .tool_item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24rpx;
+        position: relative;//相对定位
+        button{
+            position: absolute;//绝对定位
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;//透明度
+        }
+    }
+    .btn_cart{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffa500;
+        color: #fff;
+        font-size: 30rpx;
+        font-weight: 600;
+    }
+    .btn_buy{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #eb4450;
+        color: #fff;
+        font-size: 30rpx;
+        font-weight: 600;
+    }
+}
